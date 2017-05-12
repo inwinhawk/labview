@@ -73,41 +73,6 @@ void zet1LedAanR(uint8_t index, uint32_t * buffer)
 	buffer[MAXLED] = 0xFFFFFFFF;
 }
 
-void zetOpLed(uint8_t index, uint32_t * buffer, uint8_t *rdata)
-{
-	buffer[0] = 0x00000000;
-	for(int i=0; i < (MAXLED); i++ )
-	{
-		switch(rdata[i-1]){
-		case '0':
-			buffer[i+1] = 0x25000000;
-			break;
-		case '1':
-			buffer[i+1] = 0x25FF0000;
-			break;
-		case '2':
-			buffer[i+1] = 0x2500FF00;
-			break;
-		case '3':
-			buffer[i+1] = 0x25FFFF00;
-			break;
-		case '4':
-			buffer[i+1] = 0x250000FF;
-			break;
-		case '5':
-			buffer[i+1] = 0x25FF00FF;
-			break;
-		case '6':
-			buffer[i+1] = 0x2500FFFF;
-			break;
-		case '7':
-			buffer[i+1] = 0x25FFFFFF;
-			break;
-		}
-	}
-	buffer[MAXLED] = 0xFFFFFFFF;
-}
-
 void zet1LedAanG(uint8_t index, uint32_t * buffer)
 {
 	buffer[0] = 0x00000000;
@@ -259,8 +224,7 @@ int main(void)
  	 // HAL_Delay(1000);
 
   /* USER CODE END 2 */
-  zetalleLedUit(pData);
-  	  HAL_SPI_Transmit(&hspi2, (uint8_t*)pData, sizeof(pData), HAL_MAX_DELAY);
+
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
@@ -268,7 +232,8 @@ int main(void)
   /* USER CODE END WHILE */
 
   /* USER CODE BEGIN 3 */
-
+	  zetalleLedUit(pData);
+	  HAL_SPI_Transmit(&hspi2, (uint8_t*)pData, sizeof(pData), HAL_MAX_DELAY);
 	  volatile HAL_UART_StateTypeDef wdatest;
 	  uint8_t Uartbuffer[62];
 	  memset(Uartbuffer, 0, 62);
@@ -276,11 +241,7 @@ int main(void)
 	  wdatest =  HAL_UART_GetState(&huart1);
 	  HAL_UART_Receive(&huart1, Uartbuffer, 61, HAL_MAX_DELAY );
 
-	  zetOpLed(0, pData, Uartbuffer);
-	  HAL_SPI_Transmit(&hspi2, (uint8_t*)pData, sizeof(pData), HAL_MAX_DELAY);
-	  HAL_Delay(100);
-  }
-	  /*for(int i=0;i<10;i++)
+	  for(int i=0;i<10;i++)
 	  {
 		  if(Uartbuffer[i] == "0")
 		  {
@@ -338,8 +299,6 @@ int main(void)
 //	  		  }
 //	  		  HAL_SPI_Transmit(&hspi2, (uint8_t*)pData, sizeof(pData), HAL_MAX_DELAY);
 //	  		  HAL_Delay(250);
- */
-
   /* USER CODE END 3 */
 
 }

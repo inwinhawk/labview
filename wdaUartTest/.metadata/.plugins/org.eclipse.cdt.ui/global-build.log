@@ -212,3 +212,297 @@ arm-none-eabi-size "wdaUartTest.elf"
 14:13:16 **** Incremental Build of configuration Debug for project wdaUartTest ****
 make all 
 make: Nothing to be done for `all'.
+15:30:03 **** Incremental Build of configuration Debug for project wdaUartTest ****
+make all 
+'Building file: ../Src/main.c'
+'Invoking: MCU GCC Compiler'
+C:\Users\r0631\Documents\documenten elektronica-ict\fase2 sem2\labview\project\wdaUartTest\wdaUartTest\Debug
+arm-none-eabi-gcc -mcpu=cortex-m7 -mthumb -mfloat-abi=hard -mfpu=fpv5-sp-d16 -D__weak=__attribute__((weak)) -D__packed=__attribute__((__packed__)) -DUSE_HAL_DRIVER -DSTM32F746xx -I"C:/Users/r0631/Documents/documenten elektronica-ict/fase2 sem2/labview/project/wdaUartTest/wdaUartTest/Inc" -I"C:/Users/r0631/Documents/documenten elektronica-ict/fase2 sem2/labview/project/wdaUartTest/wdaUartTest/Drivers/STM32F7xx_HAL_Driver/Inc" -I"C:/Users/r0631/Documents/documenten elektronica-ict/fase2 sem2/labview/project/wdaUartTest/wdaUartTest/Drivers/STM32F7xx_HAL_Driver/Inc/Legacy" -I"C:/Users/r0631/Documents/documenten elektronica-ict/fase2 sem2/labview/project/wdaUartTest/wdaUartTest/Drivers/CMSIS/Device/ST/STM32F7xx/Include" -I"C:/Users/r0631/Documents/documenten elektronica-ict/fase2 sem2/labview/project/wdaUartTest/wdaUartTest/Drivers/CMSIS/Include" -I"C:/Users/r0631/Documents/documenten elektronica-ict/fase2 sem2/labview/project/wdaUartTest/wdaUartTest/Inc"  -Os -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+../Src/main.c: In function 'main':
+../Src/main.c:341:3: warning: "/*" within comment [-Wcomment]
+   /* USER CODE END 3 */
+   ^
+../Src/main.c:272:35: warning: variable 'wdatest' set but not used [-Wunused-but-set-variable]
+    volatile HAL_UART_StateTypeDef wdatest;
+                                   ^
+../Src/main.c:410:13: error: invalid storage class for function 'MX_SPI2_Init'
+ static void MX_SPI2_Init(void)
+             ^
+../Src/main.c:435:13: error: invalid storage class for function 'MX_USART1_UART_Init'
+ static void MX_USART1_UART_Init(void)
+             ^
+../Src/main.c:462:13: error: invalid storage class for function 'MX_GPIO_Init'
+ static void MX_GPIO_Init(void)
+             ^
+../Src/main.c:491:1: error: expected declaration or statement at end of input
+ }
+ ^
+../Src/main.c: At top level:
+../Src/main.c:58:13: warning: 'MX_GPIO_Init' used but never defined
+ static void MX_GPIO_Init(void);
+             ^
+../Src/main.c:59:13: warning: 'MX_USART1_UART_Init' used but never defined
+ static void MX_USART1_UART_Init(void);
+             ^
+../Src/main.c:60:13: warning: 'MX_SPI2_Init' used but never defined
+ static void MX_SPI2_Init(void);
+             ^
+make: *** [Src/main.o] Error 1
+15:30:43 **** Incremental Build of configuration Debug for project wdaUartTest ****
+make all 
+'Building file: ../Src/main.c'
+'Invoking: MCU GCC Compiler'
+C:\Users\r0631\Documents\documenten elektronica-ict\fase2 sem2\labview\project\wdaUartTest\wdaUartTest\Debug
+arm-none-eabi-gcc -mcpu=cortex-m7 -mthumb -mfloat-abi=hard -mfpu=fpv5-sp-d16 -D__weak=__attribute__((weak)) -D__packed=__attribute__((__packed__)) -DUSE_HAL_DRIVER -DSTM32F746xx -I"C:/Users/r0631/Documents/documenten elektronica-ict/fase2 sem2/labview/project/wdaUartTest/wdaUartTest/Inc" -I"C:/Users/r0631/Documents/documenten elektronica-ict/fase2 sem2/labview/project/wdaUartTest/wdaUartTest/Drivers/STM32F7xx_HAL_Driver/Inc" -I"C:/Users/r0631/Documents/documenten elektronica-ict/fase2 sem2/labview/project/wdaUartTest/wdaUartTest/Drivers/STM32F7xx_HAL_Driver/Inc/Legacy" -I"C:/Users/r0631/Documents/documenten elektronica-ict/fase2 sem2/labview/project/wdaUartTest/wdaUartTest/Drivers/CMSIS/Device/ST/STM32F7xx/Include" -I"C:/Users/r0631/Documents/documenten elektronica-ict/fase2 sem2/labview/project/wdaUartTest/wdaUartTest/Drivers/CMSIS/Include" -I"C:/Users/r0631/Documents/documenten elektronica-ict/fase2 sem2/labview/project/wdaUartTest/wdaUartTest/Inc"  -Os -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+../Src/main.c: In function 'main':
+../Src/main.c:272:35: warning: variable 'wdatest' set but not used [-Wunused-but-set-variable]
+    volatile HAL_UART_StateTypeDef wdatest;
+                                   ^
+../Src/main.c:412:13: error: invalid storage class for function 'MX_SPI2_Init'
+ static void MX_SPI2_Init(void)
+             ^
+../Src/main.c:437:13: error: invalid storage class for function 'MX_USART1_UART_Init'
+ static void MX_USART1_UART_Init(void)
+             ^
+../Src/main.c:464:13: error: invalid storage class for function 'MX_GPIO_Init'
+ static void MX_GPIO_Init(void)
+             ^
+../Src/main.c:493:1: error: expected declaration or statement at end of input
+ }
+ ^
+../Src/main.c: At top level:
+../Src/main.c:58:13: warning: 'MX_GPIO_Init' used but never defined
+ static void MX_GPIO_Init(void);
+             ^
+../Src/main.c:59:13: warning: 'MX_USART1_UART_Init' used but never defined
+ static void MX_USART1_UART_Init(void);
+             ^
+../Src/main.c:60:13: warning: 'MX_SPI2_Init' used but never defined
+ static void MX_SPI2_Init(void);
+             ^
+make: *** [Src/main.o] Error 1
+15:31:24 **** Incremental Build of configuration Debug for project wdaUartTest ****
+make all 
+'Building file: ../Src/main.c'
+'Invoking: MCU GCC Compiler'
+C:\Users\r0631\Documents\documenten elektronica-ict\fase2 sem2\labview\project\wdaUartTest\wdaUartTest\Debug
+arm-none-eabi-gcc -mcpu=cortex-m7 -mthumb -mfloat-abi=hard -mfpu=fpv5-sp-d16 -D__weak=__attribute__((weak)) -D__packed=__attribute__((__packed__)) -DUSE_HAL_DRIVER -DSTM32F746xx -I"C:/Users/r0631/Documents/documenten elektronica-ict/fase2 sem2/labview/project/wdaUartTest/wdaUartTest/Inc" -I"C:/Users/r0631/Documents/documenten elektronica-ict/fase2 sem2/labview/project/wdaUartTest/wdaUartTest/Drivers/STM32F7xx_HAL_Driver/Inc" -I"C:/Users/r0631/Documents/documenten elektronica-ict/fase2 sem2/labview/project/wdaUartTest/wdaUartTest/Drivers/STM32F7xx_HAL_Driver/Inc/Legacy" -I"C:/Users/r0631/Documents/documenten elektronica-ict/fase2 sem2/labview/project/wdaUartTest/wdaUartTest/Drivers/CMSIS/Device/ST/STM32F7xx/Include" -I"C:/Users/r0631/Documents/documenten elektronica-ict/fase2 sem2/labview/project/wdaUartTest/wdaUartTest/Drivers/CMSIS/Include" -I"C:/Users/r0631/Documents/documenten elektronica-ict/fase2 sem2/labview/project/wdaUartTest/wdaUartTest/Inc"  -Os -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+../Src/main.c: In function 'main':
+../Src/main.c:272:35: warning: variable 'wdatest' set but not used [-Wunused-but-set-variable]
+    volatile HAL_UART_StateTypeDef wdatest;
+                                   ^
+'Finished building: ../Src/main.c'
+' '
+'Building target: wdaUartTest.elf'
+'Invoking: MCU GCC Linker'
+arm-none-eabi-gcc -mcpu=cortex-m7 -mthumb -mfloat-abi=hard -mfpu=fpv5-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32F746NGHx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "wdaUartTest.elf" @"objects.list"  
+'Finished building target: wdaUartTest.elf'
+' '
+make --no-print-directory post-build
+'Generating binary and Printing size information:'
+arm-none-eabi-objcopy -O binary "wdaUartTest.elf" "wdaUartTest.bin"
+arm-none-eabi-size "wdaUartTest.elf"
+   text	   data	    bss	    dec	    hex	filename
+   8124	     16	   2032	  10172	   27bc	wdaUartTest.elf
+' '
+15:32:31 **** Incremental Build of configuration Debug for project wdaUartTest ****
+make all 
+'Building file: ../Src/main.c'
+'Invoking: MCU GCC Compiler'
+C:\Users\r0631\Documents\documenten elektronica-ict\fase2 sem2\labview\project\wdaUartTest\wdaUartTest\Debug
+arm-none-eabi-gcc -mcpu=cortex-m7 -mthumb -mfloat-abi=hard -mfpu=fpv5-sp-d16 -D__weak=__attribute__((weak)) -D__packed=__attribute__((__packed__)) -DUSE_HAL_DRIVER -DSTM32F746xx -I"C:/Users/r0631/Documents/documenten elektronica-ict/fase2 sem2/labview/project/wdaUartTest/wdaUartTest/Inc" -I"C:/Users/r0631/Documents/documenten elektronica-ict/fase2 sem2/labview/project/wdaUartTest/wdaUartTest/Drivers/STM32F7xx_HAL_Driver/Inc" -I"C:/Users/r0631/Documents/documenten elektronica-ict/fase2 sem2/labview/project/wdaUartTest/wdaUartTest/Drivers/STM32F7xx_HAL_Driver/Inc/Legacy" -I"C:/Users/r0631/Documents/documenten elektronica-ict/fase2 sem2/labview/project/wdaUartTest/wdaUartTest/Drivers/CMSIS/Device/ST/STM32F7xx/Include" -I"C:/Users/r0631/Documents/documenten elektronica-ict/fase2 sem2/labview/project/wdaUartTest/wdaUartTest/Drivers/CMSIS/Include" -I"C:/Users/r0631/Documents/documenten elektronica-ict/fase2 sem2/labview/project/wdaUartTest/wdaUartTest/Inc"  -Os -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+../Src/main.c: In function 'main':
+../Src/main.c:272:35: warning: variable 'wdatest' set but not used [-Wunused-but-set-variable]
+    volatile HAL_UART_StateTypeDef wdatest;
+                                   ^
+'Finished building: ../Src/main.c'
+' '
+'Building target: wdaUartTest.elf'
+'Invoking: MCU GCC Linker'
+arm-none-eabi-gcc -mcpu=cortex-m7 -mthumb -mfloat-abi=hard -mfpu=fpv5-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32F746NGHx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "wdaUartTest.elf" @"objects.list"  
+'Finished building target: wdaUartTest.elf'
+' '
+make --no-print-directory post-build
+'Generating binary and Printing size information:'
+arm-none-eabi-objcopy -O binary "wdaUartTest.elf" "wdaUartTest.bin"
+arm-none-eabi-size "wdaUartTest.elf"
+   text	   data	    bss	    dec	    hex	filename
+   8064	     16	   2032	  10112	   2780	wdaUartTest.elf
+' '
+15:34:30 **** Incremental Build of configuration Debug for project wdaUartTest ****
+make all 
+'Building file: ../Src/main.c'
+'Invoking: MCU GCC Compiler'
+C:\Users\r0631\Documents\documenten elektronica-ict\fase2 sem2\labview\project\wdaUartTest\wdaUartTest\Debug
+arm-none-eabi-gcc -mcpu=cortex-m7 -mthumb -mfloat-abi=hard -mfpu=fpv5-sp-d16 -D__weak=__attribute__((weak)) -D__packed=__attribute__((__packed__)) -DUSE_HAL_DRIVER -DSTM32F746xx -I"C:/Users/r0631/Documents/documenten elektronica-ict/fase2 sem2/labview/project/wdaUartTest/wdaUartTest/Inc" -I"C:/Users/r0631/Documents/documenten elektronica-ict/fase2 sem2/labview/project/wdaUartTest/wdaUartTest/Drivers/STM32F7xx_HAL_Driver/Inc" -I"C:/Users/r0631/Documents/documenten elektronica-ict/fase2 sem2/labview/project/wdaUartTest/wdaUartTest/Drivers/STM32F7xx_HAL_Driver/Inc/Legacy" -I"C:/Users/r0631/Documents/documenten elektronica-ict/fase2 sem2/labview/project/wdaUartTest/wdaUartTest/Drivers/CMSIS/Device/ST/STM32F7xx/Include" -I"C:/Users/r0631/Documents/documenten elektronica-ict/fase2 sem2/labview/project/wdaUartTest/wdaUartTest/Drivers/CMSIS/Include" -I"C:/Users/r0631/Documents/documenten elektronica-ict/fase2 sem2/labview/project/wdaUartTest/wdaUartTest/Inc"  -Os -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+../Src/main.c: In function 'main':
+../Src/main.c:272:35: warning: variable 'wdatest' set but not used [-Wunused-but-set-variable]
+    volatile HAL_UART_StateTypeDef wdatest;
+                                   ^
+'Finished building: ../Src/main.c'
+' '
+'Building target: wdaUartTest.elf'
+'Invoking: MCU GCC Linker'
+arm-none-eabi-gcc -mcpu=cortex-m7 -mthumb -mfloat-abi=hard -mfpu=fpv5-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32F746NGHx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "wdaUartTest.elf" @"objects.list"  
+'Finished building target: wdaUartTest.elf'
+' '
+make --no-print-directory post-build
+'Generating binary and Printing size information:'
+arm-none-eabi-objcopy -O binary "wdaUartTest.elf" "wdaUartTest.bin"
+arm-none-eabi-size "wdaUartTest.elf"
+   text	   data	    bss	    dec	    hex	filename
+   8064	     16	   2032	  10112	   2780	wdaUartTest.elf
+' '
+15:34:47 **** Incremental Build of configuration Debug for project wdaUartTest ****
+make all 
+'Building file: ../Src/main.c'
+'Invoking: MCU GCC Compiler'
+C:\Users\r0631\Documents\documenten elektronica-ict\fase2 sem2\labview\project\wdaUartTest\wdaUartTest\Debug
+arm-none-eabi-gcc -mcpu=cortex-m7 -mthumb -mfloat-abi=hard -mfpu=fpv5-sp-d16 -D__weak=__attribute__((weak)) -D__packed=__attribute__((__packed__)) -DUSE_HAL_DRIVER -DSTM32F746xx -I"C:/Users/r0631/Documents/documenten elektronica-ict/fase2 sem2/labview/project/wdaUartTest/wdaUartTest/Inc" -I"C:/Users/r0631/Documents/documenten elektronica-ict/fase2 sem2/labview/project/wdaUartTest/wdaUartTest/Drivers/STM32F7xx_HAL_Driver/Inc" -I"C:/Users/r0631/Documents/documenten elektronica-ict/fase2 sem2/labview/project/wdaUartTest/wdaUartTest/Drivers/STM32F7xx_HAL_Driver/Inc/Legacy" -I"C:/Users/r0631/Documents/documenten elektronica-ict/fase2 sem2/labview/project/wdaUartTest/wdaUartTest/Drivers/CMSIS/Device/ST/STM32F7xx/Include" -I"C:/Users/r0631/Documents/documenten elektronica-ict/fase2 sem2/labview/project/wdaUartTest/wdaUartTest/Drivers/CMSIS/Include" -I"C:/Users/r0631/Documents/documenten elektronica-ict/fase2 sem2/labview/project/wdaUartTest/wdaUartTest/Inc"  -Os -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+../Src/main.c: In function 'main':
+../Src/main.c:272:35: warning: variable 'wdatest' set but not used [-Wunused-but-set-variable]
+    volatile HAL_UART_StateTypeDef wdatest;
+                                   ^
+'Finished building: ../Src/main.c'
+' '
+'Building target: wdaUartTest.elf'
+'Invoking: MCU GCC Linker'
+arm-none-eabi-gcc -mcpu=cortex-m7 -mthumb -mfloat-abi=hard -mfpu=fpv5-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32F746NGHx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "wdaUartTest.elf" @"objects.list"  
+'Finished building target: wdaUartTest.elf'
+' '
+make --no-print-directory post-build
+'Generating binary and Printing size information:'
+arm-none-eabi-objcopy -O binary "wdaUartTest.elf" "wdaUartTest.bin"
+arm-none-eabi-size "wdaUartTest.elf"
+   text	   data	    bss	    dec	    hex	filename
+   8064	     16	   2032	  10112	   2780	wdaUartTest.elf
+' '
+15:39:02 **** Incremental Build of configuration Debug for project wdaUartTest ****
+make all 
+'Building file: ../Src/main.c'
+'Invoking: MCU GCC Compiler'
+C:\Users\r0631\Documents\documenten elektronica-ict\fase2 sem2\labview\project\wdaUartTest\wdaUartTest\Debug
+arm-none-eabi-gcc -mcpu=cortex-m7 -mthumb -mfloat-abi=hard -mfpu=fpv5-sp-d16 -D__weak=__attribute__((weak)) -D__packed=__attribute__((__packed__)) -DUSE_HAL_DRIVER -DSTM32F746xx -I"C:/Users/r0631/Documents/documenten elektronica-ict/fase2 sem2/labview/project/wdaUartTest/wdaUartTest/Inc" -I"C:/Users/r0631/Documents/documenten elektronica-ict/fase2 sem2/labview/project/wdaUartTest/wdaUartTest/Drivers/STM32F7xx_HAL_Driver/Inc" -I"C:/Users/r0631/Documents/documenten elektronica-ict/fase2 sem2/labview/project/wdaUartTest/wdaUartTest/Drivers/STM32F7xx_HAL_Driver/Inc/Legacy" -I"C:/Users/r0631/Documents/documenten elektronica-ict/fase2 sem2/labview/project/wdaUartTest/wdaUartTest/Drivers/CMSIS/Device/ST/STM32F7xx/Include" -I"C:/Users/r0631/Documents/documenten elektronica-ict/fase2 sem2/labview/project/wdaUartTest/wdaUartTest/Drivers/CMSIS/Include" -I"C:/Users/r0631/Documents/documenten elektronica-ict/fase2 sem2/labview/project/wdaUartTest/wdaUartTest/Inc"  -Os -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+../Src/main.c: In function 'main':
+../Src/main.c:272:35: warning: variable 'wdatest' set but not used [-Wunused-but-set-variable]
+    volatile HAL_UART_StateTypeDef wdatest;
+                                   ^
+'Finished building: ../Src/main.c'
+' '
+'Building target: wdaUartTest.elf'
+'Invoking: MCU GCC Linker'
+arm-none-eabi-gcc -mcpu=cortex-m7 -mthumb -mfloat-abi=hard -mfpu=fpv5-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32F746NGHx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "wdaUartTest.elf" @"objects.list"  
+'Finished building target: wdaUartTest.elf'
+' '
+make --no-print-directory post-build
+'Generating binary and Printing size information:'
+arm-none-eabi-objcopy -O binary "wdaUartTest.elf" "wdaUartTest.bin"
+arm-none-eabi-size "wdaUartTest.elf"
+   text	   data	    bss	    dec	    hex	filename
+   8064	     16	   2032	  10112	   2780	wdaUartTest.elf
+' '
+15:39:55 **** Incremental Build of configuration Debug for project wdaUartTest ****
+make all 
+'Building file: ../Src/main.c'
+'Invoking: MCU GCC Compiler'
+C:\Users\r0631\Documents\documenten elektronica-ict\fase2 sem2\labview\project\wdaUartTest\wdaUartTest\Debug
+arm-none-eabi-gcc -mcpu=cortex-m7 -mthumb -mfloat-abi=hard -mfpu=fpv5-sp-d16 -D__weak=__attribute__((weak)) -D__packed=__attribute__((__packed__)) -DUSE_HAL_DRIVER -DSTM32F746xx -I"C:/Users/r0631/Documents/documenten elektronica-ict/fase2 sem2/labview/project/wdaUartTest/wdaUartTest/Inc" -I"C:/Users/r0631/Documents/documenten elektronica-ict/fase2 sem2/labview/project/wdaUartTest/wdaUartTest/Drivers/STM32F7xx_HAL_Driver/Inc" -I"C:/Users/r0631/Documents/documenten elektronica-ict/fase2 sem2/labview/project/wdaUartTest/wdaUartTest/Drivers/STM32F7xx_HAL_Driver/Inc/Legacy" -I"C:/Users/r0631/Documents/documenten elektronica-ict/fase2 sem2/labview/project/wdaUartTest/wdaUartTest/Drivers/CMSIS/Device/ST/STM32F7xx/Include" -I"C:/Users/r0631/Documents/documenten elektronica-ict/fase2 sem2/labview/project/wdaUartTest/wdaUartTest/Drivers/CMSIS/Include" -I"C:/Users/r0631/Documents/documenten elektronica-ict/fase2 sem2/labview/project/wdaUartTest/wdaUartTest/Inc"  -Os -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+../Src/main.c: In function 'main':
+../Src/main.c:272:35: warning: variable 'wdatest' set but not used [-Wunused-but-set-variable]
+    volatile HAL_UART_StateTypeDef wdatest;
+                                   ^
+'Finished building: ../Src/main.c'
+' '
+'Building target: wdaUartTest.elf'
+'Invoking: MCU GCC Linker'
+arm-none-eabi-gcc -mcpu=cortex-m7 -mthumb -mfloat-abi=hard -mfpu=fpv5-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32F746NGHx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "wdaUartTest.elf" @"objects.list"  
+'Finished building target: wdaUartTest.elf'
+' '
+make --no-print-directory post-build
+'Generating binary and Printing size information:'
+arm-none-eabi-objcopy -O binary "wdaUartTest.elf" "wdaUartTest.bin"
+arm-none-eabi-size "wdaUartTest.elf"
+   text	   data	    bss	    dec	    hex	filename
+   8124	     16	   2032	  10172	   27bc	wdaUartTest.elf
+' '
+15:40:01 **** Incremental Build of configuration Debug for project wdaUartTest ****
+make all 
+make: Nothing to be done for `all'.
+15:40:42 **** Incremental Build of configuration Debug for project wdaUartTest ****
+make all 
+'Building file: ../Src/main.c'
+'Invoking: MCU GCC Compiler'
+C:\Users\r0631\Documents\documenten elektronica-ict\fase2 sem2\labview\project\wdaUartTest\wdaUartTest\Debug
+arm-none-eabi-gcc -mcpu=cortex-m7 -mthumb -mfloat-abi=hard -mfpu=fpv5-sp-d16 -D__weak=__attribute__((weak)) -D__packed=__attribute__((__packed__)) -DUSE_HAL_DRIVER -DSTM32F746xx -I"C:/Users/r0631/Documents/documenten elektronica-ict/fase2 sem2/labview/project/wdaUartTest/wdaUartTest/Inc" -I"C:/Users/r0631/Documents/documenten elektronica-ict/fase2 sem2/labview/project/wdaUartTest/wdaUartTest/Drivers/STM32F7xx_HAL_Driver/Inc" -I"C:/Users/r0631/Documents/documenten elektronica-ict/fase2 sem2/labview/project/wdaUartTest/wdaUartTest/Drivers/STM32F7xx_HAL_Driver/Inc/Legacy" -I"C:/Users/r0631/Documents/documenten elektronica-ict/fase2 sem2/labview/project/wdaUartTest/wdaUartTest/Drivers/CMSIS/Device/ST/STM32F7xx/Include" -I"C:/Users/r0631/Documents/documenten elektronica-ict/fase2 sem2/labview/project/wdaUartTest/wdaUartTest/Drivers/CMSIS/Include" -I"C:/Users/r0631/Documents/documenten elektronica-ict/fase2 sem2/labview/project/wdaUartTest/wdaUartTest/Inc"  -Os -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+../Src/main.c: In function 'main':
+../Src/main.c:272:35: warning: variable 'wdatest' set but not used [-Wunused-but-set-variable]
+    volatile HAL_UART_StateTypeDef wdatest;
+                                   ^
+'Finished building: ../Src/main.c'
+' '
+'Building target: wdaUartTest.elf'
+'Invoking: MCU GCC Linker'
+arm-none-eabi-gcc -mcpu=cortex-m7 -mthumb -mfloat-abi=hard -mfpu=fpv5-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32F746NGHx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "wdaUartTest.elf" @"objects.list"  
+'Finished building target: wdaUartTest.elf'
+' '
+make --no-print-directory post-build
+'Generating binary and Printing size information:'
+arm-none-eabi-objcopy -O binary "wdaUartTest.elf" "wdaUartTest.bin"
+arm-none-eabi-size "wdaUartTest.elf"
+   text	   data	    bss	    dec	    hex	filename
+   8120	     16	   2032	  10168	   27b8	wdaUartTest.elf
+' '
+15:40:58 **** Incremental Build of configuration Debug for project wdaUartTest ****
+make all 
+make: Nothing to be done for `all'.
+15:41:14 **** Incremental Build of configuration Debug for project wdaUartTest ****
+make all 
+'Building file: ../Src/main.c'
+'Invoking: MCU GCC Compiler'
+C:\Users\r0631\Documents\documenten elektronica-ict\fase2 sem2\labview\project\wdaUartTest\wdaUartTest\Debug
+arm-none-eabi-gcc -mcpu=cortex-m7 -mthumb -mfloat-abi=hard -mfpu=fpv5-sp-d16 -D__weak=__attribute__((weak)) -D__packed=__attribute__((__packed__)) -DUSE_HAL_DRIVER -DSTM32F746xx -I"C:/Users/r0631/Documents/documenten elektronica-ict/fase2 sem2/labview/project/wdaUartTest/wdaUartTest/Inc" -I"C:/Users/r0631/Documents/documenten elektronica-ict/fase2 sem2/labview/project/wdaUartTest/wdaUartTest/Drivers/STM32F7xx_HAL_Driver/Inc" -I"C:/Users/r0631/Documents/documenten elektronica-ict/fase2 sem2/labview/project/wdaUartTest/wdaUartTest/Drivers/STM32F7xx_HAL_Driver/Inc/Legacy" -I"C:/Users/r0631/Documents/documenten elektronica-ict/fase2 sem2/labview/project/wdaUartTest/wdaUartTest/Drivers/CMSIS/Device/ST/STM32F7xx/Include" -I"C:/Users/r0631/Documents/documenten elektronica-ict/fase2 sem2/labview/project/wdaUartTest/wdaUartTest/Drivers/CMSIS/Include" -I"C:/Users/r0631/Documents/documenten elektronica-ict/fase2 sem2/labview/project/wdaUartTest/wdaUartTest/Inc"  -Os -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+../Src/main.c: In function 'main':
+../Src/main.c:272:35: warning: variable 'wdatest' set but not used [-Wunused-but-set-variable]
+    volatile HAL_UART_StateTypeDef wdatest;
+                                   ^
+'Finished building: ../Src/main.c'
+' '
+'Building target: wdaUartTest.elf'
+'Invoking: MCU GCC Linker'
+arm-none-eabi-gcc -mcpu=cortex-m7 -mthumb -mfloat-abi=hard -mfpu=fpv5-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32F746NGHx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "wdaUartTest.elf" @"objects.list"  
+'Finished building target: wdaUartTest.elf'
+' '
+make --no-print-directory post-build
+'Generating binary and Printing size information:'
+arm-none-eabi-objcopy -O binary "wdaUartTest.elf" "wdaUartTest.bin"
+arm-none-eabi-size "wdaUartTest.elf"
+   text	   data	    bss	    dec	    hex	filename
+   8124	     16	   2032	  10172	   27bc	wdaUartTest.elf
+' '
+15:41:48 **** Incremental Build of configuration Debug for project wdaUartTest ****
+make all 
+make: Nothing to be done for `all'.
+15:41:50 **** Incremental Build of configuration Debug for project wdaUartTest ****
+make all 
+'Building file: ../Src/main.c'
+'Invoking: MCU GCC Compiler'
+C:\Users\r0631\Documents\documenten elektronica-ict\fase2 sem2\labview\project\wdaUartTest\wdaUartTest\Debug
+arm-none-eabi-gcc -mcpu=cortex-m7 -mthumb -mfloat-abi=hard -mfpu=fpv5-sp-d16 -D__weak=__attribute__((weak)) -D__packed=__attribute__((__packed__)) -DUSE_HAL_DRIVER -DSTM32F746xx -I"C:/Users/r0631/Documents/documenten elektronica-ict/fase2 sem2/labview/project/wdaUartTest/wdaUartTest/Inc" -I"C:/Users/r0631/Documents/documenten elektronica-ict/fase2 sem2/labview/project/wdaUartTest/wdaUartTest/Drivers/STM32F7xx_HAL_Driver/Inc" -I"C:/Users/r0631/Documents/documenten elektronica-ict/fase2 sem2/labview/project/wdaUartTest/wdaUartTest/Drivers/STM32F7xx_HAL_Driver/Inc/Legacy" -I"C:/Users/r0631/Documents/documenten elektronica-ict/fase2 sem2/labview/project/wdaUartTest/wdaUartTest/Drivers/CMSIS/Device/ST/STM32F7xx/Include" -I"C:/Users/r0631/Documents/documenten elektronica-ict/fase2 sem2/labview/project/wdaUartTest/wdaUartTest/Drivers/CMSIS/Include" -I"C:/Users/r0631/Documents/documenten elektronica-ict/fase2 sem2/labview/project/wdaUartTest/wdaUartTest/Inc"  -Os -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+../Src/main.c: In function 'main':
+../Src/main.c:272:35: warning: variable 'wdatest' set but not used [-Wunused-but-set-variable]
+    volatile HAL_UART_StateTypeDef wdatest;
+                                   ^
+'Finished building: ../Src/main.c'
+' '
+'Building target: wdaUartTest.elf'
+'Invoking: MCU GCC Linker'
+arm-none-eabi-gcc -mcpu=cortex-m7 -mthumb -mfloat-abi=hard -mfpu=fpv5-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32F746NGHx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "wdaUartTest.elf" @"objects.list"  
+'Finished building target: wdaUartTest.elf'
+' '
+make --no-print-directory post-build
+'Generating binary and Printing size information:'
+arm-none-eabi-objcopy -O binary "wdaUartTest.elf" "wdaUartTest.bin"
+arm-none-eabi-size "wdaUartTest.elf"
+   text	   data	    bss	    dec	    hex	filename
+   8124	     16	   2032	  10172	   27bc	wdaUartTest.elf
+' '
