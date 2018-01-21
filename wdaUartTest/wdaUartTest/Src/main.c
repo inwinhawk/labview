@@ -1,7 +1,7 @@
 /**
   ******************************************************************************
-  * File Name          : main.c
-  * Description        : Main program body
+  * File Name          : main.c 
+  * Description        : Main program body test
   ******************************************************************************
   *
   * COPYRIGHT(c) 2017 STMicroelectronics
